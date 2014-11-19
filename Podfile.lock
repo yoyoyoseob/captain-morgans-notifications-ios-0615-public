@@ -1,0 +1,22 @@
+PODS:
+  - Expecta (0.2.4)
+  - KIF (3.0.8):
+    - KIF/XCTest
+  - KIF/XCTest (3.0.8)
+  - Specta (0.3.0.beta1)
+
+DEPENDENCIES:
+  - Expecta (~> 0.2.4)
+  - KIF (~> 3.0)
+  - Specta (from `git@github.com:specta/specta.git`)
+
+EXTERNAL SOURCES:
+  Specta:
+    :git: git@github.com:specta/specta.git
+
+SPEC CHECKSUMS:
+  Expecta: 112bcafa2304ee0f3c5e586505f24555a47b25d5
+  KIF: 2db5e8cf59136dd1267d49cca0d55883389b09d3
+  Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
+
+COCOAPODS: 0.34.4

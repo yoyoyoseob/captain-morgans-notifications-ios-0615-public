@@ -12,6 +12,7 @@
 		72E77FC419C9DF02009467D7 /* Pirate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E77FC319C9DF02009467D7 /* Pirate.m */; };
 		72E77FC719C9DF02009467D7 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E77FC619C9DF02009467D7 /* Engine.m */; };
 		72E77FCA19C9DF02009467D7 /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E77FC919C9DF02009467D7 /* Ship.m */; };
+		72EF586C0DB5CAE7CC3F5529 /* libPods-OpenMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB4EBD597701E0A82BF401B /* libPods-OpenMeTests.a */; };
 		D8DCF8F018C54AE0002AB285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DCF8EF18C54AE0002AB285 /* Foundation.framework */; };
 		D8DCF8F218C54AE0002AB285 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DCF8F118C54AE0002AB285 /* CoreGraphics.framework */; };
 		D8DCF8F418C54AE0002AB285 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DCF8F318C54AE0002AB285 /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DB4EBD597701E0A82BF401B /* libPods-OpenMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		725044FE19CA302D00192888 /* FISAddPirateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAddPirateViewController.h; sourceTree = "<group>"; };
 		725044FF19CA302D00192888 /* FISAddPirateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAddPirateViewController.m; sourceTree = "<group>"; };
 		7250450119CA360800192888 /* FISAddShipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAddShipViewController.h; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		72E77FC619C9DF02009467D7 /* Engine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
 		72E77FC819C9DF02009467D7 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
 		72E77FC919C9DF02009467D7 /* Ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ship.m; sourceTree = "<group>"; };
+		7A3E92CD57D992484BCEADB3 /* Pods-OpenMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMeTests/Pods-OpenMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF1EF3F34E3BD16976A4C6E1 /* Pods-OpenMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenMeTests/Pods-OpenMeTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8DCF8EC18C54AE0002AB285 /* OpenMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DCF8EF18C54AE0002AB285 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8DCF8F118C54AE0002AB285 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -102,12 +106,22 @@
 				D8DCF91118C54AE0002AB285 /* CoreData.framework in Frameworks */,
 				D8DCF91018C54AE0002AB285 /* UIKit.framework in Frameworks */,
 				D8DCF90F18C54AE0002AB285 /* Foundation.framework in Frameworks */,
+				72EF586C0DB5CAE7CC3F5529 /* libPods-OpenMeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007292C4EE69417EBABBEF79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A3E92CD57D992484BCEADB3 /* Pods-OpenMeTests.debug.xcconfig */,
+				CF1EF3F34E3BD16976A4C6E1 /* Pods-OpenMeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		724DB7F019C9CD2D00945D93 /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +162,7 @@
 				D8DCF91418C54AE0002AB285 /* OpenMeTests */,
 				D8DCF8EE18C54AE0002AB285 /* Frameworks */,
 				D8DCF8ED18C54AE0002AB285 /* Products */,
+				007292C4EE69417EBABBEF79 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +183,7 @@
 				D8DCF8F318C54AE0002AB285 /* UIKit.framework */,
 				D8DCF8F518C54AE0002AB285 /* CoreData.framework */,
 				D8DCF90D18C54AE0002AB285 /* XCTest.framework */,
+				2DB4EBD597701E0A82BF401B /* libPods-OpenMeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8DCF92118C54AE0002AB285 /* Build configuration list for PBXNativeTarget "OpenMeTests" */;
 			buildPhases = (
+				47DEB29B0042D304E82A5389 /* Check Pods Manifest.lock */,
 				D8DCF90818C54AE0002AB285 /* Sources */,
 				D8DCF90918C54AE0002AB285 /* Frameworks */,
 				D8DCF90A18C54AE0002AB285 /* Resources */,
+				4EBD69B182C18F2A0CD4656A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,6 +323,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47DEB29B0042D304E82A5389 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4EBD69B182C18F2A0CD4656A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenMeTests/Pods-OpenMeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8DCF8E818C54AE0002AB285 /* Sources */ = {
@@ -461,6 +512,7 @@
 		};
 		D8DCF92218C54AE0002AB285 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A3E92CD57D992484BCEADB3 /* Pods-OpenMeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenMe.app/OpenMe";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -483,6 +535,7 @@
 		};
 		D8DCF92318C54AE0002AB285 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1EF3F34E3BD16976A4C6E1 /* Pods-OpenMeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenMe.app/OpenMe";
 				FRAMEWORK_SEARCH_PATHS = (
