@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314DD8C21A1D36C000ADC35D /* FISAddShipViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 314DD8C11A1D36C000ADC35D /* FISAddShipViewControllerSpec.m */; };
+		3191D6951A1E756C0011335C /* FISAddPirateViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3191D6941A1E756C0011335C /* FISAddPirateViewControllerSpec.m */; };
+		3191D6971A1E76AD0011335C /* FISPiratesDataStoreSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3191D6961A1E76AD0011335C /* FISPiratesDataStoreSpec.m */; };
+		31F8D3A21A1F94A200BB865D /* FISPiratesViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F8D3A11A1F94A200BB865D /* FISPiratesViewControllerSpec.m */; };
+		31F8D3A41A1F94AE00BB865D /* FISShipsViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F8D3A31A1F94AE00BB865D /* FISShipsViewControllerSpec.m */; };
+		31F8D3A61A1F94D100BB865D /* FISShipDetailViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F8D3A51A1F94D100BB865D /* FISShipDetailViewControllerSpec.m */; };
 		7250450019CA302D00192888 /* FISAddPirateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725044FF19CA302D00192888 /* FISAddPirateViewController.m */; };
 		7250450319CA360800192888 /* FISAddShipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7250450219CA360800192888 /* FISAddShipViewController.m */; };
 		72E77FC419C9DF02009467D7 /* Pirate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E77FC319C9DF02009467D7 /* Pirate.m */; };
 		72E77FC719C9DF02009467D7 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E77FC619C9DF02009467D7 /* Engine.m */; };
 		72E77FCA19C9DF02009467D7 /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E77FC919C9DF02009467D7 /* Ship.m */; };
 		72EF586C0DB5CAE7CC3F5529 /* libPods-OpenMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB4EBD597701E0A82BF401B /* libPods-OpenMeTests.a */; };
+		72F02BC419F952F00027E3AA /* Pirate+ConvenienceMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F02BC119F952F00027E3AA /* Pirate+ConvenienceMethods.m */; };
+		72F02BC519F952F00027E3AA /* Ship+ConvenienceMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F02BC319F952F00027E3AA /* Ship+ConvenienceMethods.m */; };
 		D8DCF8F018C54AE0002AB285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DCF8EF18C54AE0002AB285 /* Foundation.framework */; };
 		D8DCF8F218C54AE0002AB285 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DCF8F118C54AE0002AB285 /* CoreGraphics.framework */; };
 		D8DCF8F418C54AE0002AB285 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DCF8F318C54AE0002AB285 /* UIKit.framework */; };
@@ -46,6 +54,12 @@
 
 /* Begin PBXFileReference section */
 		2DB4EBD597701E0A82BF401B /* libPods-OpenMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		314DD8C11A1D36C000ADC35D /* FISAddShipViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAddShipViewControllerSpec.m; sourceTree = "<group>"; };
+		3191D6941A1E756C0011335C /* FISAddPirateViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAddPirateViewControllerSpec.m; sourceTree = "<group>"; };
+		3191D6961A1E76AD0011335C /* FISPiratesDataStoreSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISPiratesDataStoreSpec.m; path = OpenMeTests/FISPiratesDataStoreSpec.m; sourceTree = SOURCE_ROOT; };
+		31F8D3A11A1F94A200BB865D /* FISPiratesViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPiratesViewControllerSpec.m; sourceTree = "<group>"; };
+		31F8D3A31A1F94AE00BB865D /* FISShipsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISShipsViewControllerSpec.m; sourceTree = "<group>"; };
+		31F8D3A51A1F94D100BB865D /* FISShipDetailViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISShipDetailViewControllerSpec.m; sourceTree = "<group>"; };
 		725044FE19CA302D00192888 /* FISAddPirateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAddPirateViewController.h; sourceTree = "<group>"; };
 		725044FF19CA302D00192888 /* FISAddPirateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAddPirateViewController.m; sourceTree = "<group>"; };
 		7250450119CA360800192888 /* FISAddShipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAddShipViewController.h; sourceTree = "<group>"; };
@@ -217,6 +231,12 @@
 			isa = PBXGroup;
 			children = (
 				D8DCF91518C54AE0002AB285 /* Supporting Files */,
+				3191D6961A1E76AD0011335C /* FISPiratesDataStoreSpec.m */,
+				314DD8C11A1D36C000ADC35D /* FISAddShipViewControllerSpec.m */,
+				3191D6941A1E756C0011335C /* FISAddPirateViewControllerSpec.m */,
+				31F8D3A11A1F94A200BB865D /* FISPiratesViewControllerSpec.m */,
+				31F8D3A31A1F94AE00BB865D /* FISShipsViewControllerSpec.m */,
+				31F8D3A51A1F94D100BB865D /* FISShipDetailViewControllerSpec.m */,
 			);
 			path = OpenMeTests;
 			sourceTree = "<group>";
@@ -381,6 +401,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3191D6971A1E76AD0011335C /* FISPiratesDataStoreSpec.m in Sources */,
+				31F8D3A21A1F94A200BB865D /* FISPiratesViewControllerSpec.m in Sources */,
+				3191D6951A1E756C0011335C /* FISAddPirateViewControllerSpec.m in Sources */,
+				314DD8C21A1D36C000ADC35D /* FISAddShipViewControllerSpec.m in Sources */,
+				31F8D3A41A1F94AE00BB865D /* FISShipsViewControllerSpec.m in Sources */,
+				31F8D3A61A1F94D100BB865D /* FISShipDetailViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
