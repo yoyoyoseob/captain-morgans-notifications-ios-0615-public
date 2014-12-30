@@ -25,3 +25,7 @@ tags: delegates, coredata, advanced
     +(instancetype)pirateFromDictionary:(NSDictionary *)dictionary
     andContext:(NSManagedObjectContext *)context;
     ```
+
+## Hint
+
+Your NSNotification `addObserver` method should be placed inside of the dispatch_once block of your `FISPiratesDataStore` singleton. Don't forget to appropriately remove the observer as well!
