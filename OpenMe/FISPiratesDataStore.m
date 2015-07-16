@@ -9,6 +9,8 @@
 #import "FISPiratesDataStore.h"
 #import "Ship.h"
 #import "Engine.h"
+#import "Pirate+FISPirateFromDictionary.h"
+#import "Ship+FISShipFromDictionary.h"
 
 @interface FISPiratesDataStore ()
 typedef NS_ENUM(NSInteger, EngineType) {
@@ -28,9 +30,30 @@ typedef NS_ENUM(NSInteger, EngineType) {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedPiratesDataStore = [[FISPiratesDataStore alloc] init];
+        // Add NSNotification Here
+        // Don't forget to remove the observer when necessary
+        
+        NSLog(@"About to createAhoy");
+        [[NSNotificationCenter defaultCenter] addObserver:_sharedPiratesDataStore selector:@selector(makerBot:) name:@"CreateAhoy" object:nil];
+        
     });
 
     return _sharedPiratesDataStore;
+}
+
+-(void)makerBot:(NSNotification *)notification
+{
+    if ([notification.userInfo[@"entity"] isEqualToString:@"Ship"])
+    {
+        NSLog(@"Gonna Create a SHIP");
+        [Ship shipFromDictionary:notification.userInfo andContext:self.managedObjectContext];
+    }
+    else
+    {
+        NSLog(@"Gonna Create a PIRATE");
+        [Pirate pirateFromDictionary:notification.userInfo andContext:self.managedObjectContext];
+    }
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"CreateAhoy" object:self];
 }
 
 - (void)save

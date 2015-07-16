@@ -13,14 +13,14 @@
 		31F8D3A21A1F94A200BB865D /* FISPiratesViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F8D3A11A1F94A200BB865D /* FISPiratesViewControllerSpec.m */; };
 		31F8D3A41A1F94AE00BB865D /* FISShipsViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F8D3A31A1F94AE00BB865D /* FISShipsViewControllerSpec.m */; };
 		31F8D3A61A1F94D100BB865D /* FISShipDetailViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F8D3A51A1F94D100BB865D /* FISShipDetailViewControllerSpec.m */; };
+		715B89ED1B570532000B455E /* Ship+FISShipFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 715B89EC1B570532000B455E /* Ship+FISShipFromDictionary.m */; };
+		715B89F01B570569000B455E /* Pirate+FISPirateFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 715B89EF1B570569000B455E /* Pirate+FISPirateFromDictionary.m */; };
 		7250450019CA302D00192888 /* FISAddPirateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725044FF19CA302D00192888 /* FISAddPirateViewController.m */; };
 		7250450319CA360800192888 /* FISAddShipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7250450219CA360800192888 /* FISAddShipViewController.m */; };
 		72E77FC419C9DF02009467D7 /* Pirate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E77FC319C9DF02009467D7 /* Pirate.m */; };
 		72E77FC719C9DF02009467D7 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E77FC619C9DF02009467D7 /* Engine.m */; };
 		72E77FCA19C9DF02009467D7 /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E77FC919C9DF02009467D7 /* Ship.m */; };
 		72EF586C0DB5CAE7CC3F5529 /* libPods-OpenMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB4EBD597701E0A82BF401B /* libPods-OpenMeTests.a */; };
-		72F02BC419F952F00027E3AA /* Pirate+ConvenienceMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F02BC119F952F00027E3AA /* Pirate+ConvenienceMethods.m */; };
-		72F02BC519F952F00027E3AA /* Ship+ConvenienceMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F02BC319F952F00027E3AA /* Ship+ConvenienceMethods.m */; };
 		D8DCF8F018C54AE0002AB285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DCF8EF18C54AE0002AB285 /* Foundation.framework */; };
 		D8DCF8F218C54AE0002AB285 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DCF8F118C54AE0002AB285 /* CoreGraphics.framework */; };
 		D8DCF8F418C54AE0002AB285 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DCF8F318C54AE0002AB285 /* UIKit.framework */; };
@@ -60,6 +60,10 @@
 		31F8D3A11A1F94A200BB865D /* FISPiratesViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPiratesViewControllerSpec.m; sourceTree = "<group>"; };
 		31F8D3A31A1F94AE00BB865D /* FISShipsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISShipsViewControllerSpec.m; sourceTree = "<group>"; };
 		31F8D3A51A1F94D100BB865D /* FISShipDetailViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISShipDetailViewControllerSpec.m; sourceTree = "<group>"; };
+		715B89EB1B570532000B455E /* Ship+FISShipFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ship+FISShipFromDictionary.h"; sourceTree = "<group>"; };
+		715B89EC1B570532000B455E /* Ship+FISShipFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ship+FISShipFromDictionary.m"; sourceTree = "<group>"; };
+		715B89EE1B570569000B455E /* Pirate+FISPirateFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pirate+FISPirateFromDictionary.h"; sourceTree = "<group>"; };
+		715B89EF1B570569000B455E /* Pirate+FISPirateFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pirate+FISPirateFromDictionary.m"; sourceTree = "<group>"; };
 		725044FE19CA302D00192888 /* FISAddPirateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAddPirateViewController.h; sourceTree = "<group>"; };
 		725044FF19CA302D00192888 /* FISAddPirateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAddPirateViewController.m; sourceTree = "<group>"; };
 		7250450119CA360800192888 /* FISAddShipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISAddShipViewController.h; sourceTree = "<group>"; };
@@ -139,6 +143,10 @@
 		724DB7F019C9CD2D00945D93 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				715B89EB1B570532000B455E /* Ship+FISShipFromDictionary.h */,
+				715B89EC1B570532000B455E /* Ship+FISShipFromDictionary.m */,
+				715B89EE1B570569000B455E /* Pirate+FISPirateFromDictionary.h */,
+				715B89EF1B570569000B455E /* Pirate+FISPirateFromDictionary.m */,
 				D8DCF97018C60C8F002AB285 /* FISPiratesDataStore.h */,
 				D8DCF97118C60C8F002AB285 /* FISPiratesDataStore.m */,
 				72E77FC219C9DF02009467D7 /* Pirate.h */,
@@ -388,12 +396,14 @@
 				D8DCF96C18C60C6D002AB285 /* FISShipsViewController.m in Sources */,
 				7250450019CA302D00192888 /* FISAddPirateViewController.m in Sources */,
 				D8DCF90518C54AE0002AB285 /* OpenMe.xcdatamodeld in Sources */,
+				715B89F01B570569000B455E /* Pirate+FISPirateFromDictionary.m in Sources */,
 				72E77FCA19C9DF02009467D7 /* Ship.m in Sources */,
 				D8DCF96918C60C65002AB285 /* FISPiratesViewController.m in Sources */,
 				D8DCF90218C54AE0002AB285 /* FISAppDelegate.m in Sources */,
 				D8DCF97218C60C8F002AB285 /* FISPiratesDataStore.m in Sources */,
 				72E77FC719C9DF02009467D7 /* Engine.m in Sources */,
 				7250450319CA360800192888 /* FISAddShipViewController.m in Sources */,
+				715B89ED1B570532000B455E /* Ship+FISShipFromDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

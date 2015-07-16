@@ -29,12 +29,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+ 
+ Broadcast NSNotification with information from user as NSDictionary
+ 
+ */
+
 - (IBAction)saveButtonTapped:(id)sender {
-    FISPiratesDataStore *store = [FISPiratesDataStore sharedPiratesDataStore];
-    Pirate *newPirate = [NSEntityDescription insertNewObjectForEntityForName:@"Pirate" inManagedObjectContext:store.managedObjectContext];
-    newPirate.name = self.pirateNameField.text;
+//    FISPiratesDataStore *store = [FISPiratesDataStore sharedPiratesDataStore];
+//    Pirate *newPirate = [NSEntityDescription insertNewObjectForEntityForName:@"Pirate" inManagedObjectContext:store.managedObjectContext];
+//    newPirate.name = self.pirateNameField.text;
+//    
+//    [store save];
     
-    [store save];
+    NSDictionary *userInfo = @{ @"entity" : @"Pirate",
+                                @"pirateName" : self.pirateNameField.text };
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"CreateAhoy" object:nil userInfo:userInfo];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

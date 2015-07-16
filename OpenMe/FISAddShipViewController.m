@@ -32,16 +32,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+ 
+ Broadcast NSNotification with information from user as NSDictionary
+ 
+ */
+
 - (IBAction)saveButtonTapped:(id)sender {
-    FISPiratesDataStore *store = [FISPiratesDataStore sharedPiratesDataStore];
-    Ship *newShip = [NSEntityDescription insertNewObjectForEntityForName:@"Ship" inManagedObjectContext:store.managedObjectContext];
-    newShip.name = self.shipNameField.text;
-    newShip.engine = [NSEntityDescription insertNewObjectForEntityForName:@"Engine" inManagedObjectContext:store.managedObjectContext];
-    newShip.engine.engineType = self.engineTypeField.text;
+//    FISPiratesDataStore *store = [FISPiratesDataStore sharedPiratesDataStore];
+//    Ship *newShip = [NSEntityDescription insertNewObjectForEntityForName:@"Ship" inManagedObjectContext:store.managedObjectContext];
+//    newShip.name = self.shipNameField.text;
+//    newShip.engine = [NSEntityDescription insertNewObjectForEntityForName:@"Engine" inManagedObjectContext:store.managedObjectContext];
+//    newShip.engine.engineType = self.engineTypeField.text;
+//    
+//    [self.pirate addShipsObject:newShip];
+//    
+//    [store save];
+//    
+    NSDictionary *userInfo = @{ @"pirate" : self.pirate,
+                                @"entity" : @"Ship",
+                                @"shipName" : self.shipNameField.text,
+                                @"shipEngineEntity" : @"Engine",
+                                @"shipEngineType" : self.engineTypeField.text };
     
-    [self.pirate addShipsObject:newShip];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"CreateAhoy" object:nil userInfo:userInfo];
     
-    [store save];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
